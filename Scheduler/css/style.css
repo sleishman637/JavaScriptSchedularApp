@@ -1,0 +1,55 @@
+/* Copyright (C) 2018 Scott Henshaw, All Rights Reserved */
+.hide { display:none; }
+.box-border {
+    border:1px solid blue;
+    width:90%;
+}
+.box-dashed {
+    border:2px dashed red;
+}
+.editor {
+    background-image: url('../images/myBackground.jpg');
+    height: 720px;
+    width: 1024px;
+}
+td {
+		min-width: 10em;
+		min-height: 3em;        
+		border: 1px solid green;
+}
+            
+input{
+		display: inline-block;
+}
+
+li {
+	color: black;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.button{
+    display:inline-block;
+    margin:0.25em;
+    padding:0.25em;
+
+
+   	background-color: lightgrey;
+    font-size: 18px;
+    font-size: 700;
+    color: black;
+	border-top: 3px solid grey;
+	border-left: 3px solid grey;
+    border-right: 3px solid darkslategrey;
+    border-bottom: 3px solid darkslategrey;
+}
+
+#todo-area{
+	background-color: darkgrey;
+}
+
+.container{
+	display:inline-block;
+	border:2px solid white;
+	margin: 0.5em;
+}
