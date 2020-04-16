@@ -5,16 +5,10 @@
  */
 'use strict';
 
-// import Schedule from "./Schedule.js"
-// import Course from "./Course.js"
-
-// export ... = something that can be imported to another module
-// ... default = the default thing to export can be imported without {}
-//      ... class = an Object definition (not an instance of an Object), we can make more
 export default class App {
 
   	constructor() {
-        this.daysOfTheWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday','friday'];
+        this.daysOfTheWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday','Friday'];
         document.querySelector("#schedule-grid").innerHTML = this.generateSchedule(this.daysOfTheWeek);
         this.eventMessage = "add button handled"
 
@@ -28,21 +22,6 @@ export default class App {
 
             document.querySelector("#virtual-console").innerHTML = this.eventMessage;
         })
-        
-
-
-            // Initialize any app variables or code we will need
-
-            // this.mySchedule = new Schedule();
-            // let javaScriptCourse = new Course('JavaScript & jQuery', 0, "Thursday");
-            // let designInterface = new Course('Interface Design', 2, "wednesday");
-
-            // javaScriptCourse.setlocation("Home");
-            // javaScriptCourse.assignInstructor("scott");
-
-            //let savannahsSchedule =generateEmptySchedule();
-        
-          // Initialize any event handlers
     }
 
     addTodoItem(event){
@@ -78,7 +57,7 @@ export default class App {
             }
             markup += "</tr>";
 
-            for  (let timeslot of ['am','pm','eve']) {
+            for  (let timeslot of ['AM','PM','EVE']) {
                 markup += this.generateScheduleRow( daysOfTheWeek , timeslot );
             }
             markup +="</tbody></table>";

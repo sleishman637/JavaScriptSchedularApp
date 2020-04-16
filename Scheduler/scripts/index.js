@@ -22,11 +22,7 @@ let course ={
 function generateEmptySchedule() {
 
     let aSchedule = []; // list of my courses booyeah
-
-//for (let aDay of DAYS) {
     for (let i in DAYS) {
-        //for (let i = 0; i < DAYS. length; i++) {
-        //theSchedule [aDay] =[]; // timeslots like AM, PM, EVE
         aSchedule[DAYS[i] ] = [];
     }
 
